@@ -4,7 +4,8 @@
   "description": "messagemebackendserver",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "start:dev":"nodemon"
   },
   "engines": {
     "node": "12.18.4"
