@@ -17,7 +17,7 @@ const io = require('socket.io')({
 })
 
 const PORT = process.env.PORT || 5960;
-const server = app.listen(PORT,"192.168.18.4", () => { winston.info(`Listening at port:${PORT}`) });
+const server = app.listen(PORT, () => { winston.info(`Listening at port:${PORT}`) });
 io.attach(server);
 
 io.on('connect', (socket) => {
