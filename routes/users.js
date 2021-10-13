@@ -167,8 +167,20 @@ router.post('/search',auth, handleRouteErrors(async (req, res) => {
   user = await User.find({ 'name': { '$regex': value, '$options': 'i' }, private: false }).select(['_id', 'name', 'imageUri', 'email'])
     .skip((pageNumber - 1) * pageSize).limit(pageSize);
   if (!user) return res.status(404).send("No Matches")
-
   res.status(200).send(user);
+}));
+
+router.post('/name', auth, handleRouteErrors(async(req,res) => {
+  const user = await User.findOne({_id: req.user._id});
+  user.name = req.body.name;
+  await user.save();
+  const token = tokenGenerator(user);
+  res.status(200).send(token);
+}))
+
+router.post("/privacy", auth, handleRouteErrors(async(req,res) => {
+  await User.updateOne({_id: req.user._id},{active:req.body.checked});
+  res.status(200).send("Success");
 }));
 
 const validateLogin = loginRequest => {
