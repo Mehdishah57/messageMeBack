@@ -6,7 +6,6 @@ const { handleRouteErrors } = require('../tryCatch');
 const router = express.Router();
 const { User, validateUser, tokenGenerator } = require('../models/userModel');
 const fs = require('fs');
-const path = require('path');
 const config = require('config');
 const { google } = require('googleapis')
 const auth = require("../middleware/auth");
@@ -179,7 +178,7 @@ router.post('/name', auth, handleRouteErrors(async(req,res) => {
 }))
 
 router.post("/privacy", auth, handleRouteErrors(async(req,res) => {
-  await User.updateOne({_id: req.user._id},{active:req.body.checked});
+  await User.updateOne({_id: req.user._id},{private:!req.body.checked});
   res.status(200).send("Success");
 }));
 

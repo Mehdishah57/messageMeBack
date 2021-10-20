@@ -1674,3 +1674,51 @@
 {"errors":{"message.32.text":{"name":"ValidatorError","message":"Path `text` is required.","properties":{"message":"Path `text` is required.","type":"required","path":"text"},"kind":"required","path":"text"}},"_message":"Message validation failed","level":"error","name":"ValidationError","message":"Message validation failed: message.32.text: Path `text` is required."}
 {"message":"Listening at port:5960","level":"info"}
 {"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"errors":{"message.37.text":{"name":"ValidatorError","message":"Path `text` is required.","properties":{"message":"Path `text` is required.","type":"required","path":"text","value":""},"kind":"required","path":"text","value":""}},"_message":"Message validation failed","level":"error","name":"ValidationError","message":"Message validation failed: message.37.text: Path `text` is required."}
+{"errors":{"message.37.text":{"name":"ValidatorError","message":"Path `text` is required.","properties":{"message":"Path `text` is required.","type":"required","path":"text","value":""},"kind":"required","path":"text","value":""}},"_message":"Message validation failed","level":"error","name":"ValidationError","message":"Message validation failed: message.37.text: Path `text` is required."}
+{"errors":{"message.37.text":{"name":"ValidatorError","message":"Path `text` is required.","properties":{"message":"Path `text` is required.","type":"required","path":"text","value":""},"kind":"required","path":"text","value":""}},"_message":"Message validation failed","level":"error","name":"ValidationError","message":"Message validation failed: message.37.text: Path `text` is required."}
+{"errors":{"message.37.text":{"name":"ValidatorError","message":"Path `text` is required.","properties":{"message":"Path `text` is required.","type":"required","path":"text","value":""},"kind":"required","path":"text","value":""}},"_message":"Message validation failed","level":"error","name":"ValidationError","message":"Message validation failed: message.37.text: Path `text` is required."}
+{"errors":{"message.37.text":{"name":"ValidatorError","message":"Path `text` is required.","properties":{"message":"Path `text` is required.","type":"required","path":"text","value":""},"kind":"required","path":"text","value":""}},"_message":"Message validation failed","level":"error","name":"ValidationError","message":"Message validation failed: message.37.text: Path `text` is required."}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"level":"error"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"level":"error"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"level":"error"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"level":"error"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"level":"error"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}
+{"message":"Listening at port:5960","level":"info"}
+{"message":"Connection with DataBase Successful at: mongodb://localhost/messageMe","level":"info"}

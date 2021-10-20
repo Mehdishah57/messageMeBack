@@ -11,7 +11,8 @@ router.post('/',auth, handleRouteErrors(async (req, res) => {
   const { error } = validateMessage(req.body);
   if (error) return res.status(400).send("Bad Request")
   const { member_1, member_2, message } = req.body;
-  let exist = await Message.findOne(({ member_1: member_1, member_2: member_2 }) || ({ member_1: member_2, member_2: member_1 }));
+  let exist = await Message.findOne(({ member_1: member_1, member_2: member_2 }));
+  if(!exist) exist = await Message.findOne(({ member_1: member_2, member_2: member_1 }));
   if (!exist) {
     const messages = new Message({ member_1, member_2, message });
     await messages.save()
