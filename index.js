@@ -25,7 +25,11 @@ io.on('connect', (socket) => {
     socket.join(user.email);
     io.to(user.email).emit("logger", `You Joined ${user.email}`);
   })
-  socket.on("join-chat-emails", id => socket.join(id));
+  socket.on("join-chat-emails", id => {
+    socket.join(id)
+    const clients = io.sockets.adapter.rooms.get(id);
+    if(clients.size > 1) io.to(id).emit("online")
+  });
   socket.on("message", (data) => {
     if (data && data.thisMessage)
       io.to(data.conversation._id).emit("user-message", data);
@@ -39,5 +43,8 @@ io.on('connect', (socket) => {
   socket.on("searchedMessage", data => {
     io.to(data.item.email).emit("update-chats");
     io.to(data.thisMessage.sender).emit("update-chats")
+  })
+  socket.on("user-disconnect", (id)=>{
+    socket.to(id).emit("offline")
   })
 })

@@ -2,3 +2,4 @@ node_modules/
 googleSecrets.json
 jsonData.txt
 unCaughtExceptions.log
+logFile.log
